@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'mitra';
+    src: url('../fonts/Mitra.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: mitra;
+}
+
+.new-part {
+    border-top: 15px solid red;
+    border-bottom: 15px solid red;
+    margin-top: 100px;
+    padding: 20px 0;
+    padding-bottom: 50px;
+}
+
+.option_wrapper {
+    display: flex;
+}
+
+.delete {
+    width: 50%;
+    background: red;
+    padding: 5px;
+}
+
+.edit {
+    width: 50%;
+    background: cornflowerblue;
+    padding: 5px;
+}
+
+.my-bg-color {
+    background: #F0F0F2;
+}
+
+.my-rtl {
+    direction: rtl !important;
+}
+
+.header-h1 {
+    color: #0B1C39;
+    padding-top: 50px;
+    text-align: center;
+    margin: revert;
+}
+
+.header-p {
+    color: #0B1C39;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.header-img {
+    filter: drop-shadow(14px 15px 38px #000);
+    width: 40%;
+}
+
+.my-btn {
+    width: 228px;
+    margin-left: 30px;
+}
+
+.new-price {
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.nav-log {
+    text-align: right;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.my-blue-font-color {
+    color: #0B1C39;
+}
+
+.my-red-font-color {
+    color: red
+}
+
+a {
+    color: #0B1C39;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0B1C39;
+    text-decoration: none;
+}
+
+a:active {
+    color: #0B1C39;
+    text-decoration: none;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.des-text {
+    color: #fff;
+    text-align: right;
+    padding: 0 30px;
+}
+
+.des-titr {
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+}
+
+.custom-badge {
+    background: red !important;
+}
+
+.my-nav-link {
+    padding: 10px;
+}
+
+.my-shadow-style-one {
+    box-shadow: 10px 10px 10px #eee;
+}
+
+.descriptions-icons-wrapper {
+    text-align: center;
+    padding-top: 31px;
+}
+
+.descriptions-icons {
+    color: #fff;
+    font-size: 60px;
+}
+
+.dark-theme-red {
+    background: rgb(234, 0, 0);
+}
+
+.my-shadow-style-two {
+    box-shadow: -10px -10px 10px #eee;
+}
+
+.mt-200px {
+    margin-top: 200px !important;
+}
+
+.nav-link-container {
+    line-height: 45px;
+    font-size: 18px;
+}
+
+.icon-container {
+    padding-top: 13px;
+    color: gray;
+    text-align: center;
+}
+
+.icon-link {
+    padding: 0 5px;
+    color: gray;
+}
+
+.new-product-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0B1C39;
+}
+
+.font-gray-color {
+    color: #555 !important;
+}
+
+.font-20px {
+    font-size: 18px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.main-container-img {
+    width: 100%;
+}
+
+.main-container-img-half {
+    width: 100%;
+    height: 299px;
+}
+
+.new-product-img-height {
+    height: 521.31px;
+}
+
+.mt-120px {
+    margin-top: 120px;
+}
+
+.popular-product-img {
+    border-bottom: 6px solid rgb(255, 32, 32);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.show-watch-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: none;
+    background: rgb(255, 32, 32);
+    color: #fff;
+    padding: 20px 78px;
+}
+
+.next-video-btn {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 8px;
+    border: none;
+    width: 23%;
+    height: 15%;
+    background: rgb(255, 32, 32);
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.text-align-right {
+    text-align: right !important;
+}
+
+.video-container {
+    position: relative;
+    width: 94%;
+    margin: 120px auto;
+}
+
+.load-more-btn {
+    margin: auto;
+    width: 200px;
+    display: block;
+    height: 53px;
+    border: none;
+    background: rgb(255, 32, 32);
+    color: #fff;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.play-btn {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    left: 45%;
+    top: 45%;
+}
+
+.i-play-font-size {
+    font-size: 100px !important;
+}
+
+@media only screen and (min-width: 780px) {
+    .main-container-img {
+        width: 100%;
+        height: 600px;
+    }
+    .main-container-img-half {
+        width: 100%;
+        height: 299px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .video-container {
+        height: 155px;
+    }
+    .next-video-btn {
+        right: 0;
+        bottom: 2px;
+        border: none;
+        width: 33%;
+        height: 25%;
+        background: rgb(255, 32, 32);
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .i-play-font-size {
+        font-size: 35px !important;
+    }
+    .show-watch-btn {
+        position: static;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+}

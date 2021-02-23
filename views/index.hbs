@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head dir="rtl">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock shop</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+<!--========nav start==========-->
+    <div class="container-fluid my-rtl">
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <p class="nav-log"><span class="my-blue-font-color"> منطقه </span><span class="my-red-font-color"> زمانی
+                    </span></p>
+            </div>
+            <div class="col-12 col-md-8">
+                <p class="text-align-center nav-link-container">
+                    <a class="my-nav-link" href="/">خانه</a>
+                    <a class="my-nav-link" href="/shopping">خرید</a>
+                    <a class="my-nav-link" href="/about_us">درباره ما</a>
+                    <a class="my-nav-link pl-0" href="/latest">آخرین محصولات</a><sup><span
+                            class="badge badge-danger custom-badge badge-pill">داغ</span></sup>
+                    <a class="my-nav-link" href="/blogs">وبلاگ</a>
+                    <a class="my-nav-link" href="/pages">صفحات</a>
+                    <a class="my-nav-link" href="/posts">مطالب</a>
+                </p>
+            </div>
+            <div class="col-12 col-md-2">
+                <p class="icon-container">
+                    <a href="/search_page" class="icon-link"><i class="material-icons">search</i></a>
+                    <a href="/profile" class="icon-link"><i class="material-icons">person_outline</i></a>
+                    <a href="/basket" class="icon-link"><i class="material-icons">shopping_cart</i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--========nav end==========-->
+    <!--========header-start==============-->
+    <div class="container-fluid my-bg-color my-rtl">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1 class="header-h1">سبک جدیدت رو عالی انتخاب کن</h1>
+                <p class="header-p">همین الان وارد سایت شو و بروزترین ساعت رو انتخاب کن</p>
+                <button class="btn mb-2 btn-dark my-btn">خرید</button>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <img src="assets/img/ts2.png" class="header-img" alt="watch">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========header-end==============-->
+
+    <!--=============add&search part start==============-->
+    <div class="container new-part">
+        <div class="row">
+            <div class="col-6">
+                <a href="/login" class="btn btn-primary w-100">ورود</a>
+            </div>
+            <div class="col-6">
+                <a href="/register" class="btn btn-primary w-100">ثبت نام</a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <form method="post">
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-primary" type="submit">جستوجو در بین تمام نتایج</button>
+                    </div>
+                    <input type="text" class="form-control text-align-right" name="search_box"
+                        placeholder="...دنبال چی میگردی">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--=============add&search part end================-->
+
+    <!--============start-new-arrival=================-->
+    <div class="container my-rtl my-5">
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-2">
+                <h3 class="header-h1">جدیدترین ها</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!--=====start-element=============-->
+            {{#each products}}
+            {{#if new}}
+            <div class="col-12 col-md-4">
+                <div class="card border-0">
+                    <div class="card-img clickable">
+                        <img src="{{img_url}}" class="new-product-img-height embed-responsive" alt="watch">
+                    </div>
+                    <div class="card-body">
+                        <p class="new-product-title">{{title}}</p>
+                        <p class="new-price">{{price}} تومان</p>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+            {{/each}}
+            <!--=====end-element=============-->
+        </div>
+    </div>
+    <!--============end-new-arrival=================-->
+
+    <!--================start-middle-container================ -->
+    <div class="container-fluid mt-120px">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <a href="#"><img src="assets/img/c2.jpg" class="main-container-img mt-1" alt="watch"></a>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <a href="#"><img src="assets/img/c4.jpg" class="main-container-img mt-1" alt="watch"></a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="#"><img src="assets/img/c5.jpg" class="main-container-img-half mt-1"
+                                    alt="watch"></a>
+                            <a href="#"><img src="assets/img/c6.jpg" class="main-container-img-half mt-1"
+                                    alt="watch"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================end-middle-container================ -->
+
+    <!--=========popular-items-start==========================-->
+    <h1 class="mt-120px text-align-center my-blue-font-color">محبوب ترین ها</h1>
+    <p class="text-align-center my-blue-font-color">
+        بهترین هارا با ما تجربه کنید
+    </p>
+    <div class="container">
+        <div class="row">
+            {{#each products}}
+            {{#if popular}}
+            <!--=====start-element=============-->
+            <div class="col-12 col-md-4">
+                <div class="card border-0">
+                    <div class="card-img clickable">
+                        <img src="{{img_url}}" class="popular-product-img embed-responsive" alt="watch">
+                    </div>
+                    <div class="card-body">
+                        <p class="new-product-title">{{title}}</p>
+                        <p class="text-align-center my-rtl">تومان {{price}}</p>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+            {{/each}}
+            <!--=====end-element=============-->
+        </div>
+    </div>
+    <div>
+        <button class="load-more-btn">محصولات بیشتر</button>
+    </div>
+    <!--=========popular-items-end==========================-->
+
+    <!--==============video section==========================-->
+    <div class="video-container mt-120px">
+        <video class="video-wrapper" autoplay poster="assets/img/poster.jpg">
+            <source src="#">
+        </video>
+        <button class="next-video-btn">ویدیو بعدی</button>
+        <span class="play-btn clickable"><i class="material-icons i-play-font-size">play_circle_outline</i></span>
+    </div>
+    <!--==============end video section==========================-->
+
+    <!--==================list product====================-->
+    <div class="container mt-120px">
+        <!--==============start element=======================-->
+        <div class="row mb-5 my-rtl my-shadow-style-two justify-content-center">
+            <div class="col-12 col-md-4">
+                <img src="assets/img/p1.jpg" width="100%" height="100%" alt="watch">
+            </div>
+            <div class="col-12 col-md-8 position-relative">
+                <h3 class="my-5 text-align-right my-blue-font-color">گزینه هاتو نگاه کن</h3>
+                <p class="text-align-right text-justify w-75">
+                    این ساعت که ساخت آمریکای شمال میباشد با گران بها ترین سنگ ها ساخته شده است و جلوه ی بسیار زبایی روی
+                    دست شما خواهد داشت با انتخاب این ساعت میتواند با یک تیر دو نشان بزنید هم ساعت داشته باشید و هم جز
+                    افراد خاص شوید
+                </p>
+
+                <button class=" show-watch-btn">نمایش ساعت</button>
+
+            </div>
+        </div>
+        <!--==============end element=======================-->
+
+        <!--==============start element=======================-->
+        <div class="row my-shadow-style-one mt-200px justify-content-center">
+            <div class="col-12 col-md-4">
+                <img src="assets/img/p5.jpg" width="100%" height="100%" alt="watch">
+            </div>
+            <div class="col-12 col-md-8 my-rtl position-relative">
+                <h3 class="my-5 text-align-right my-blue-font-color">گزینه هاتو نگاه کن</h3>
+                <p class="text-align-right text-justify w-75">
+                    این ساعت که ساخت آمریکای شمال میباشد با گران بها ترین سنگ ها ساخته شده است و جلوه ی بسیار زبایی روی
+                    دست شما خواهد داشت با انتخاب این ساعت میتواند با یک تیر دو نشان بزنید هم ساعت داشته باشید و هم جز
+                    افراد خاص شوید
+                </p>
+
+                <button class=" show-watch-btn">نمایش ساعت</button>
+
+            </div>
+        </div>
+        <!--==============end element=======================-->
+    </div>
+    <!--==================end list product====================-->
+
+    <!--=================description part===================-->
+
+    <div class="container-fluid dark-theme-red mt-200px">
+        <div class="row">
+            <!--============start element===============-->
+            <div class="col-12 pb-5 col-md-4">
+                <div class="descriptions-icons-wrapper mb-4"> <i
+                        class="material-icons descriptions-icons">local_shipping</i></div>
+                <h3 class="des-titr mb-4">حمل و نقل رایگان</h3>
+                <p class="des-text">با خرید از ما محصول خود را به صورت رایگان دریافت کنید</p>
+                <p class="des-text">این امکان برای رضایت شما اضافه شده است</p>
+            </div>
+            <!--===========end element========================-->
+
+            <!--============start element===============-->
+            <div class="col-12 pb-5 col-md-4">
+                <div class="descriptions-icons-wrapper mb-4"> <i class="material-icons descriptions-icons">lock_open</i>
+                </div>
+                <h3 class="des-titr mb-4">سیستم پرداخت امن</h3>
+                <p class="des-text">ما برای پرداخت وجه از جدید ترین متد ها استفاده کرده ایم</p>
+                <p class="des-text">با خیال راحت خرید کنید</p>
+            </div>
+            <!--===========end element========================-->
+
+
+            <!--============start element===============-->
+            <div class="col-12 pb-5 col-md-4">
+                <div class="descriptions-icons-wrapper mb-4"> <i class="material-icons descriptions-icons">sync</i>
+                </div>
+                <h3 class="des-titr mb-4">بازگشت سریع وجه</h3>
+                <p class="des-text">اگر پرداخت شما موفق نبود به سرعت به کارت شما باز میگردد</p>
+                <p class="des-text">پرداخت شما در کمتر از 8 ساعت بازگشت داده میشود</p>
+            </div>
+            <!--===========end element========================-->
+        </div>
+    </div>
+
+    <!--=================end description part===================-->
+
+    <!--=============start footer========================-->
+    <footer class="mt-120px">
+        <div class="container-fluid my-rtl">
+            <div class="row">
+                <!--=====start col========-->
+                <div class="col-12 col-md-3">
+                    <p class="nav-log"><span class="my-blue-font-color"> منطقه </span><span class="my-red-font-color">
+                            زمانی </span></p>
+                    <p class="text-align-right font-gray-color py-2 px-3">این فروشگاه دارای مدرک رسمی استاندارد ساعت از
+                        کانادا میباشد و افتخار افتتاح بیش از پنچاه هزار شعبه در سرار ایران عزیزمان را دارد</p>
+                </div>
+                <!--==========endcol============-->
+
+                <!--===============start col==================-->
+                <div class="col-12 col-md-3">
+                    <h3 class="text-align-right my-blue-font-color font-weight-bold px-3">دسترسی سریع</h3>
+                    <p class="text-align-right py-2 px-4">
+                        <a href="#" class="d-block font-gray-color font-20px">درباره ما</a>
+                        <a href="#" class="d-block font-gray-color font-20px">تخفیف ها</a>
+                        <a href="#" class="d-block font-gray-color font-20px">گرفتن کد تخفیف</a>
+                        <a href="#" class="d-block font-gray-color font-20px">ارتباط با ما</a>
+                    </p>
+                </div>
+                <!--=================end col==================-->
+
+                <!--===============start col==================-->
+                <div class="col-12 col-md-3">
+                    <h3 class="text-align-right my-blue-font-color font-weight-bold px-3">محصولات جدید</h3>
+                    <p class="text-align-right py-2 px-4">
+                        <a href="#" class="d-block font-gray-color font-20px">زنانه</a>
+                        <a href="#" class="d-block font-gray-color font-20px">لوازم جانبی مد</a>
+                        <a href="#" class="d-block font-gray-color font-20px">مردانه</a>
+                        <a href="#" class="d-block font-gray-color font-20px">بند لاستیکی</a>
+                    </p>
+                </div>
+                <!--=================end col==================-->
+
+                <!--===============start col==================-->
+                <div class="col-12 col-md-3">
+                    <h3 class="text-align-right my-blue-font-color font-weight-bold px-3">پشتیبانی</h3>
+                    <p class="text-align-right py-2 px-4">
+                        <a href="#" class="d-block font-gray-color font-20px">سوالات پر تکرار</a>
+                        <a href="#" class="d-block font-gray-color font-20px">شرایط و ضوابط</a>
+                        <a href="#" class="d-block font-gray-color font-20px">حریم خصوصی و امنیت</a>
+                        <a href="#" class="d-block font-gray-color font-20px">گزارش خطا در پرداخت</a>
+                    </p>
+                </div>
+                <!--=================end col==================-->
+
+            </div>
+        </div>
+    </footer>
+    <!--=============end footer========================-->
+    <div class="container-fluid my-rtl mt-5">
+        <div class="row">
+            <div class="col-6">
+                <p class="font-gray-color text-align-right py-2 px-2">تهیه شده با قلب توسط محسن مهربان پور</p>
+            </div>
+            <div class="col-6">
+                <p class="font-gray-color py-2 px-2">
+                    <a href="#" class="px-2"><i class="material-icons">facebook</i></a>
+                    <a href="#" class="px-2"><i class="material-icons">language</i></a>
+                    <a href="#" class="px-2"><i class="material-icons">fingerprint</i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>
